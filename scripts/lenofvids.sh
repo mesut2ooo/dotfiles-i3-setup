@@ -1,0 +1,1 @@
+find . -type f \( -iname "*.mp4" -o -iname "*.webm" -o -iname "*.wmv" -o -iname "*.mkv" -o -iname "*.avi" -o -iname "*.mov" \) -exec ffprobe -v error -show_entries format=duration -of csv=p=0 '{}' \; | awk '{s+=$1} END {printf "%d:%02d:%02d\n",s/3600,s%3600/60,s%60}'
