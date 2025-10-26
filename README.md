@@ -35,10 +35,12 @@ cd dotfiles-i3-setup
 
 2. copy and replace the files:
 all the directories to /home/<user>/.config
-`cp -r .scripts /home/<user>`
-`cp .x* /home/<user>`
-`cp .X* /home/<user>`
-`cp .b* /home/<user>`
+```
+cp -r .scripts /home/<user>
+cp .x* /home/<user>
+cp .X* /home/<user>
+cp .b* /home/<user>
+```
 
 4. Reload i3:
 
